@@ -6,7 +6,7 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
     var fs = require('fs');
-    var content = fs.readFileSync('index.html', 'utf-8');
+    var content = fs.readFileSync('bitstarter.html', 'utf-8');
     response.send(content);
   });
 
